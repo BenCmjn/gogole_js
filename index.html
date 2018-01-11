@@ -49,7 +49,9 @@
               <br><!-- Technique de gitan pour gagner de la place                     -->
               <br><!-- Technique de gitan pour gagner de la place (=margin-top en css)-->
               <br><!-- Technique de gitan pour gagner de la place                     -->
-              <input id="maRecherche" class="form-control form-control-lg" type="text" placeholder="Votre recherche de gogole" name="search">
+              <input id="maRecherche" class="form-control form-control-lg" type="text" placeholder="Votre recherche de gogole" name="search"
+              onkeydown = "if (event.keyCode == 13)>
+              document.getElementById('goSearch').click()"><!-- Parce que c'est classe de lancer la recherche en pressant la touche "Enter"!-->
             </div>
             <div class="col"></div>    
           </div><!-- Fin de la Row qui contient le logo et l'input -->
