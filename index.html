@@ -1,102 +1,95 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><!-- Peer coded by @YannP && @Ben Cmjn 🤓 -->
+<html>         <!-- Indenté et commenté par @Ben Cmjn ✊ -->
     <head>
-        <meta charset="utf-8" />
-        <title>Gogole - Le Google des gogoles</title>
-        <link rel="stylesheet" href="style.css"/>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-        <link rel="stylesheet" href="styleb.css"/>
-        <!-- Peer coded by @YannP && @Ben Cmjn -->
+      <meta charset="utf-8" />
+      <title>Gogole - Le Google des gogoles</title>
+      <!-- notre propre CSS -->
+      <link rel="stylesheet" href="style.css"/>
+      <!-- CSS from Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+      <!-- notre CSS, qui corrige Bootstrap -->
+      <link rel="stylesheet" href="styleb.css"/>
     </head>
 
     <body>
-        <header>
-            <nav class="navbar navbar-light bg-* justify-content-between" style="background-color: #ffffff;">
-              <a class="navbar-brand"> </a>
-              <form class="form-inline">
-                
-                <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="mailto:'benjamin.calmejane@gmail.com'">Gmail</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://images.google.fr">Images</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="apps.png" alt="apps"></a>
-                  </li>
-                </ul>
+      <header><!-- la majorité des class viennent de Bootstrap !-->
+        <!-- Début de la Navbar from Bootstrap -->
+        <nav class="navbar navbar-light bg-* justify-content-between" style="background-color: #ffffff;">
+          <a class="navbar-brand"> </a>
+          <form class="form-inline">  
+            <ul class="nav">
+              <li class="nav-item"><!-- Si tu cliques ici, envoie-moi un mail ;) -->
+                <a class="nav-link" href="mailto:'benjamin.calmejane@gmail.com'">Gmail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://images.google.fr">Images</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="apps.png" alt="apps"></a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary">Connexion</button>
+          </form>
+        </nav>
+        <!-- Fin de la Navbar from Bootstrap -->
+      </header>
 
-                <button type="button" class="btn btn-primary">Connexion</button>
-
-              </form>
-            </nav>
-        </header>
-
-         <section class="main container"  >
-            <button type="button" id="myButton">afficher les elements</button>
-        </section>
+      <!-- Si on click sur ce bouton, on passe l'étape 1 (cf. main.js)-->
+      <section class="main container"  >
+        <button type="button" id="myButton">Afficher les éléments</button>
+      </section>
+      <!-- Fin de l'élément central à l'ouverture de la page, ce qui suit n'est pas encore affiché -->
 
         <section class="main container"  id="centre" style="display:none" >
+          <!-- pour utiliser la grille bootstrap, les "col" (colonnes) sont TOUJOURS dans des "row" (rangées)-->
           <div class="row"> 
-                <div class="col">
-                </div>
-                <div class="col-6">
-                    <img class="logo" src="google.png" alt="Logo">
-                    <br>
-                    <br>
-
-                    <input id="maRecherche" class="form-control form-control-lg" type="text" placeholder="Votre recherche de gogole" name="search">
-                </div>
-                <div class="col">
-                </div>
-                
-          </div>
-          <div class="row"> 
-                  <div class="col">
-                </div>
-                  <div class="col-4 button">
-                
-                  <button id="goSearch" type="input" class="btn btn-light btn-sm">Recherche Google</button>
-                    <button type="button" class="btn btn-light btn-sm">J'ai de la chance</button>
-                    </div>
-                    <div class="col">
-                </div>
-                </div>
+            <div class="col"></div>
+            <div class="col-6"><!-- 6 colonnes dans une grille de 12 au total (donc centré) -->
+              <img class="logo" src="google.png" alt="Logo">
+              <br><!-- Technique de gitan pour gagner de la place                     -->
+              <br><!-- Technique de gitan pour gagner de la place (=margin-top en css)-->
+              <br><!-- Technique de gitan pour gagner de la place                     -->
+              <input id="maRecherche" class="form-control form-control-lg" type="text" placeholder="Votre recherche de gogole" name="search">
+            </div>
+            <div class="col"></div>    
+          </div><!-- Fin de la Row qui contient le logo et l'input -->
+          <div class="row"> <!-- Début de la nouvelle rangée-->
+            <div class="col"></div>
+            <div class="col-4 button"><!-- 4 colonnes suffisent pour 2 boutons -->
+              <button id="goSearch" type="input" class="btn btn-light btn-sm">Recherche Google</button>
+              <button type="button" class="btn btn-light btn-sm">J'ai de la chance</button>
+            </div>
+            <div class="col"></div>
+          </div><!-- Fin de la Row qui contient les boutons -->
         </section>
-
-        <div class="container">
-
-    
-  </div>
-</div>
+        
+        <!-- Début du footer from Bootstrap -->
+        <footer>
         <nav class="navbar fixed-bottom navbar-light bg-light">
             <a class="navbar-brand" href="#">France</a>
             <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjOkunI0s3YAhUIEewKHXVLBvUQkdQCCAw&url=https%3A%2F%2Fwww.google.fr%2Fintl%2Ffr_fr%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw2uB175PdVvu_s_Oh5IRJXX">Publicité</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjOkunI0s3YAhUIEewKHXVLBvUQktQCCA0&url=https%3A%2F%2Fwww.google.fr%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw3oBerwhZw46LsPtxWHNJJA">Entreprise</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjOkunI0s3YAhUIEewKHXVLBvUQkNQCCA4&url=https%3A%2F%2Fwww.google.fr%2Fintl%2Ffr_fr%2Fabout%2F%3Futm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw1Jwo2vO2kGpzOPWCuzWlrz">A propos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.google.fr/intl/fr_fr/policies/privacy/?fg=1">Confidentialité</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.google.fr/intl/fr_fr/policies/terms/?fg=1">Conditions</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.google.fr/preferences?hl=fr">Paramètres</a>
-                  </li>
-                </ul>
-        </nav>
-
-        <script type="text/javascript" src="scripts/main.js">
-          
-        </script>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjOkunI0s3YAhUIEewKHXVLBvUQkdQCCAw&url=https%3A%2F%2Fwww.google.fr%2Fintl%2Ffr_fr%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw2uB175PdVvu_s_Oh5IRJXX">Publicité</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjOkunI0s3YAhUIEewKHXVLBvUQktQCCA0&url=https%3A%2F%2Fwww.google.fr%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw3oBerwhZw46LsPtxWHNJJA">Entreprise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjOkunI0s3YAhUIEewKHXVLBvUQkNQCCA4&url=https%3A%2F%2Fwww.google.fr%2Fintl%2Ffr_fr%2Fabout%2F%3Futm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw1Jwo2vO2kGpzOPWCuzWlrz">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.fr/intl/fr_fr/policies/privacy/?fg=1">Confidentialité</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.fr/intl/fr_fr/policies/terms/?fg=1">Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.fr/preferences?hl=fr">Paramètres</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+        <!-- Après avoir tout affiché, on lance le script js -->
+        <script type="text/javascript" src="scripts/main.js"></script>
     </body>
 </html>

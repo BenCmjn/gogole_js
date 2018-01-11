@@ -1,31 +1,20 @@
-.main
-{
+.main{
 max-width: 480px;
 margin:10% auto;
 text-align: center;
-
 }
-
-.main .logo
-{
+.main .logo{
 max-width: 272px;
 margin:0 auto;
-margi
 }
-
-.search
-{
+.search{
 display: block;
 text-align: center
-
 }
-
 .barre{
 	background-color: white;
 }
-
-.button
-{
+.button{
 	margin-top: 30px;
 	font-weight: bold;
 }
